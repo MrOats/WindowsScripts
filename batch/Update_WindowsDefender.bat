@@ -1,0 +1,9 @@
+:: Created by Drake Denston
+:: Last updated 2016-10-09
+:: Updates Windows Defender's Anti-Malware and Anti-Spyware Signatures
+:: Best if added to Task Scheduler...
+
+:: Update Virus/Malware Definitions first...
+"C:\Program Files\Windows Defender\MpCmdRun.exe" -SignatureUpdate
+:: Update Spyware Definitons next...
+"C:\Program Files\Windows Defender\MpCmdRun.exe" -SignatureUpdate -MMPC
